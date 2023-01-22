@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="home"
+        android:id="@+id/homeID"
+        android:icon="@drawable/ic_home"/>
+    <item android:title="@string/searchV"
+        android:id="@+id/searchID"
+        android:icon="@drawable/ic_search"/>
+    <item android:title="add"
+        android:id="@+id/addID"
+        android:icon="@drawable/ic_add_box"/>
+    <item android:title="favorite"
+        android:id="@+id/favoID"
+        android:icon="@drawable/ic_baseline_favorite_24"/>
+    <item android:title="person"
+        android:id="@+id/personID"
+        android:icon="@drawable/ic_baseline"/>
+
+
+</menu>

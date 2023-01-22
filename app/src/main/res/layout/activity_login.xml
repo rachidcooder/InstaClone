@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/instaback2" />
+
+
+    <EditText
+        android:id="@+id/emailloginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edts_chape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/nto_gray"
+        android:hint=" email"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/passloginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edts_chape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/nto_gray"
+        android:hint="password"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btn_loginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        />
+    <TextView
+        android:id="@+id/newAccountID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new account"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        android:padding="1dp"
+        android:textSize="18dp"
+        android:textColor="@color/nto_gray"/>
+</LinearLayout>

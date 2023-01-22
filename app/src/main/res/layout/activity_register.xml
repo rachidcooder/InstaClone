@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+ >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/instaback2" />
+
+    <EditText
+        android:id="@+id/usernameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edts_chape"
+        android:textColor="@color/black"
+       android:textColorHint="@color/nto_gray"
+        android:hint=" userName"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/nameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edts_chape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/nto_gray"
+        android:hint=" Name"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/emailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edts_chape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/nto_gray"
+        android:hint=" email"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/passID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edts_chape"
+        android:textColor="@color/black"
+        android:textColorHint="@color/nto_gray"
+        android:hint="password"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingStart="10dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btn_regesterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        />
+    <TextView
+        android:id="@+id/alreadyloginID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alredy user log in"
+        android:layout_margin="10dp"
+        android:layout_gravity="end"
+        android:padding="1dp"
+        android:textSize="18dp"
+        android:textColor="@color/nto_gray"/>
+</LinearLayout>

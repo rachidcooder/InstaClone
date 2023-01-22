@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    android:id="@+id/moreID"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/ic_more"
+    android:layout_margin="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ic_ProfileinPostID"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_person_pin"/>
+            <TextView
+                android:id="@+id/usernameInpostID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Users name"
+                android:textSize="18sp"
+                android:textColor="@color/bleu_strong"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/postImgId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:background="@color/orange"
+        app:layout_constraintDimensionRatio="1,1"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/LikeInpostID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_like" />
+
+            <ImageView
+                android:id="@+id/CommentID"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/LikeInpostID"
+                app:srcCompat="@drawable/ic_commentempty" />
+
+            <ImageView
+                android:id="@+id/saveID"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_bookmarkempty" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtLikednumberID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="123 Like"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+        <TextView
+            android:id="@+id/PosterNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Rachid heroumti "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textDescrptionID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Descrption ... "
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/nu_of_comentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="123 comment"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

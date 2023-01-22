@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbarPsID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/windowBackground">
+    <Toolbar
+        android:id="@+id/toolbarPsID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/closeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/postID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:text="Post"
+                android:textColor="#A5A0A0"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/addphotoID"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#F4F1F1"
+            android:src="@drawable/icon_instagram"
+            android:scaleType="centerInside"
+            />
+        <EditText
+            android:id="@+id/descriptionID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edts_chape"
+            android:paddingStart="10dp"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textColorHint="#605E5E"
+            android:hint="Description..."
+            android:maxLines="5"/>
+<!--
+        <com.hendraanggrian.appcompat.widget.SocialTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#hashtag and @mention."
+            app:socialFlags="hashtag|mention"
+            app:hashtagColor="@color/blue"
+            app:mentionColor="@color/red"/>
+            -->
+
+    </LinearLayout>
+</LinearLayout>
